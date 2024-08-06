@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+export const App = () => {
+  //we cant return multiple elements at once(an error will be thrown) we need them to wrap them up in one container 
+  // unlike html all single tags should be self closing tag like <img src = "url" />
+  // returning multiple element we need to use small bracket ()
+  // instead of returning multiple elements by inserting in div we can use <> at start and </> at end and insclude all the elements inside it
 
-function App() {
-  const [count, setCount] = useState(0)
+  return (<div>
+    <h1>hello world</h1>
+    <Card />
+    <Card />
+    <Card />
+    <h2>This is a movie</h2>
+  </div >);
+};
 
+
+const Card = () => {    //use PascalCase for naming components
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <h3>Hello from  componenet</h3>
   )
 }
-
-export default App
