@@ -1,5 +1,6 @@
 import Card from "./components/Card"; //here we can use any name for the component, like instead of Card we can use placeholder ,container etc but the location must be correct 
 //Best practice is to use same name as component // This is default export
+import { Series } from "./components/Series";
 import { Footer, UserName } from "./components/UserName";  //This is named export here we cant change the name
 //we can have multiple named export but only one default export
 //if there is default export and names export in a component then we can export as "Card , {Footer, UserName}"
@@ -18,15 +19,20 @@ export const App = () => {
 
 
 
-  return (<div>
-    <h1>hello world</h1>
-    <Card />
-    <h2>This is a movie</h2>
-    <p>You are a{age >= 18 ? "Adult" : "Minor"}</p>
-    <p>{txt}</p>
-    <UserName />
-    <Footer />
-  </div >);
+  // return (<div>
+  //   <h1>hello world</h1>
+  //   <Card />
+  //   <h2>This is a movie</h2>
+  //   <p>You are a{age >= 18 ? "Adult" : "Minor"}</p>
+  //   <p>{txt}</p>
+  //   <UserName />
+  //   <Footer />
+  // </div >);
+  return (
+    <>
+      <Series />
+    </>
+  )
 };
 
 
