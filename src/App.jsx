@@ -1,4 +1,5 @@
 import Card from "./components/Card"; //here we can use any name for the component, like instead of Card we can use placeholder ,container etc but the location must be correct 
+import { Profile } from "./components/Profile";
 //Best practice is to use same name as component // This is default export
 import { Series } from "./components/Series";
 import { Footer, UserName } from "./components/UserName";  //This is named export here we cant change the name
@@ -31,6 +32,7 @@ export const App = () => {
   return (
     <>
       <Series />
+      <Profile />
     </>
   )
 };
