@@ -4,7 +4,7 @@ import { SeriesCard } from "./SeriesCard"
 
 export const Series = () => {
     return (
-        <ul>
+        <ul className="container">
             {
                 seriesData.map((curElem) => { //whie using map dont forget to return elements  if single line of code no need
                     return (<SeriesCard key={curElem.id} curElem={curElem} />) //PASSING THE PROPS

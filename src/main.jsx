@@ -6,8 +6,8 @@ import { Profile } from './components/Profile.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Profile />
+    <App />
+    {/* <Profile /> */}
 
   </React.StrictMode>,
 )

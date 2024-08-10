@@ -32,7 +32,7 @@ export const App = () => {
   return (
     <>
       <Series />
-      <Profile />
+      {/* <Profile /> */}
     </>
   )
 };
